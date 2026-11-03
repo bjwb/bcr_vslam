@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+
+build/
+install/
+log/
+logs/
+*.bag
+*.db
+*.db-journal
+
+.vscode/
+*.swp
