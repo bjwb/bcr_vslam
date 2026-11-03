@@ -17,11 +17,18 @@ RTAB-Map RGB-D mapping with a 3D point cloud and estimated trajectory.
 
 ## Build
 
-Place both repositories under `src/` in the same workspace. Run the following
-commands in a terminal with the ROS 2 and Nav2 environments sourced.
+Create a workspace for the examples:
 
 ```bash
-cd ~/jwb_ws
+mkdir -p ~/ros2_ws/src
+```
+
+Place the `bcr_bot` and `vslam_bringup` repositories under `~/ros2_ws/src/`.
+Then run the following commands in a terminal with the ROS 2 and Nav2
+environments sourced.
+
+```bash
+cd ~/ros2_ws
 rosdep install --from-paths src/bcr_bot src/vslam_bringup --ignore-src -r -y
 colcon build --packages-select bcr_bot vslam_bringup
 source install/setup.bash
@@ -29,7 +36,7 @@ source install/setup.bash
 
 ## Run
 
-Run `source ~/jwb_ws/install/setup.bash` in each terminal.
+Run `source ~/ros2_ws/install/setup.bash` in each terminal.
 
 Start the robot and RGB-D bridge in Gazebo Fortress:
 

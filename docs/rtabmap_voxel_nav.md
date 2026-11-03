@@ -6,7 +6,7 @@
 
 ## 실행
 
-각 터미널에서 `source ~/jwb_ws/install/setup.bash`를 실행합니다.
+각 터미널에서 `source ~/ros2_ws/install/setup.bash`를 실행합니다.
 로봇/시뮬레이터가 센서, odometry, TF를 먼저 발행하고 있어야 합니다.
 시뮬레이터가 이미 실행 중이면 다시 실행하지 않습니다.
 

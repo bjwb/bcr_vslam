@@ -8,7 +8,7 @@ After changing the model or launch files, rebuild both packages and restart the
 simulation so that the updated sensor is spawned:
 
 ```bash
-cd ~/jwb_ws
+cd ~/ros2_ws
 colcon build --packages-select bcr_bot vslam_bringup
 source install/setup.bash
 ros2 launch vslam_bringup ign.launch.py camera_enabled:=true stereo_camera_enabled:=false
